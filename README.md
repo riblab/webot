@@ -140,23 +140,16 @@ sudo systemctl status nginx             # 查看 nginx 服务状态
 ###########################
 ● nginx.service - The nginx HTTP and reverse proxy server
    Loaded: loaded (/usr/lib/systemd/system/nginx.service; enabled; vendor preset: disabled)
-  Drop-In: /etc/systemd/system/nginx.service.d
-           └─override.conf
-   Active: active (running) since Thu 2019-11-21 11:54:11 CST; 21s ago
-  Process: 10679 ExecStartPost=/bin/sleep 0.1 (code=exited, status=0/SUCCESS)
-  Process: 10676 ExecStart=/usr/sbin/nginx (code=exited, status=0/SUCCESS)
-  Process: 10672 ExecStartPre=/usr/sbin/nginx -t (code=exited, status=0/SUCCESS)
-  Process: 10671 ExecStartPre=/usr/bin/rm -f /run/nginx.pid (code=exited, status=0/SUCCESS)
- Main PID: 10678 (nginx)
+   Active: active (running) since 三 2022-01-26 08:15:52 CST; 28min ago
+ Main PID: 24075 (nginx)
    CGroup: /system.slice/nginx.service
-           ├─10678 nginx: master process /usr/sbin/nginx
-           └─10680 nginx: worker process
+           ├─24075 nginx: master process /usr/sbin/nginx
+           └─24077 nginx: worker process
 
-Nov 21 11:54:11 simple systemd[1]: Stopped The nginx HTTP and reverse proxy server.
-Nov 21 11:54:11 simple systemd[1]: Starting The nginx HTTP and reverse proxy server...
-Nov 21 11:54:11 simple nginx[10672]: nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
-Nov 21 11:54:11 simple nginx[10672]: nginx: configuration file /etc/nginx/nginx.conf test is successful
-Nov 21 11:54:11 simple systemd[1]: Started The nginx HTTP and reverse proxy server.
+1月 26 08:15:52 VM-12-16-centos systemd[1]: Starting The nginx HTTP and reverse proxy server...
+1月 26 08:15:52 VM-12-16-centos nginx[24071]: nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+1月 26 08:15:52 VM-12-16-centos nginx[24071]: nginx: configuration file /etc/nginx/nginx.conf test is successful
+1月 26 08:15:52 VM-12-16-centos systemd[1]: Started The nginx HTTP and reverse proxy server.
 ###########################
 ```
 
