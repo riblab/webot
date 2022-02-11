@@ -309,3 +309,11 @@ pstree -ap|grep gunicorn           # 查看 gunicorn 进程树
 kill -HUP ***(编号)                 # 重启 gunicorn 线程
 kill -9 ***(编号)										# 关闭 gunicorn 线程
 ```
+
+
+**Q6:执行  ./configure 报错 make命令：没有指明目标并且找不到 makefile及make命令 **
+
+```
+安装 gcc 环境 
+yum install gcc-c++
+```
