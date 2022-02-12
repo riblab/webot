@@ -224,6 +224,7 @@ if __name__ == '__main__':
 **8.启动 Gunicorin 服务器**
 
 ```linux
+# 注意这里要回到虚拟环境中在执行！！！
 gunicorn -w 1 -b 127.0.0.1:8000 webot:app
 
 # 参数解释
